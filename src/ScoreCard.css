@@ -1,0 +1,78 @@
+.scoreBoard > div{
+/*   max-width: 100%; */
+  display: grid;
+  gap: 5px;
+  grid-auto-flow: column;
+  align-content: row;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.scoreBoard > div > span {
+  padding: 5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.scoreBoard .score{
+  background-color: lightgreen;
+  border-left: 5px solid #2d9f2d;
+}
+.scoreBoard .batsman{
+  background-color: rgba(35, 134, 101, 0.2);
+  border-left: 5px solid #2d9f9f;
+}
+.scoreBoard .bowler{
+  background-color: #e3d19c;
+  border-left: 5px solid #cdac4c;
+}
+.scoreBoard .inning{
+  background-color: #e9afe9;
+  border-left: 5px solid #cd4ccd;
+}
+.scoreBoard .bowlingTeam{
+  background-color: #afafe9;
+  border-left: 5px solid #6060d2;
+}
+.scoreBoard [datatooltip]{
+  position: relative;
+}
+.scoreBoard [datatooltip]:hover::after{
+  content: attr(datatooltip);
+  position: absolute;
+  max-width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  bottom: calc(2rem);
+  background-color: gray;
+  padding: 6px 5px;
+  z-index: 2;
+  border: 1px solid blue;
+  border-bottom: 5px solid blue;
+}
+.scoreBoard [datatooltip]:hover::before{
+  content: "";
+  position: absolute;
+  max-width: max-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: calc(2rem - 10px);
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue transparent transparent;
+  z-index: 50;
+}
+.scoreBoard img{
+  width: 20px;
+  height: 20px;
+}
+@media only screen and (min-width: 650px) {
+  .scoreBoard{
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: column;
+  }
+}

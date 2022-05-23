@@ -1,0 +1,56 @@
+#head__watch{
+  text-align: center;
+  margin: 0 5px;
+}
+#head__topBar{
+  display: flex;
+  align-items: center;
+}
+#head__topBar > img{
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#head__topBar > div > button{
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#head__teamName1 > button{
+  background-color: #87A8A4;
+  border: 2px solid #035397;
+}
+#head__teamName2 > button{
+  background-color: #DEBA9D;
+  border: 2px solid #9E7777;
+}
+
+#head__teamName2, #head__teamName1{
+  position: absolute;
+  width: 47%;
+}
+#head__teamName2{
+  right: 5px;
+}
+#head__teamName1{
+  left: 5px;
+}
+#head__team1Players, #head__team2Players{
+  border: 1.4px solid;
+  border-radius: 5px;
+  margin:5px 0px;
+  padding: 5px;
+}
+#head__team1Players{
+  border-color: #035397;
+}
+#head__team2Players{
+  border-color: #9E7777;
+}
+#head__team1Players > h3{
+  color: #035397;
+}
+#head__team2Players > h3{
+  color: #9E7777;
+}
